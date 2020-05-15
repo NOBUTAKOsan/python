@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}">
+      <title>User　management</title>
+ </head>
+  <body>
+    <h2>User management</h2>
+  	       <table align="center">
+          		      <tr>
+                  	      <th>Name</th>
+              			<th>Password</th>
+              			<th>Email</th>
+                        </tr>
+                        {%for u in users%}
+                              <tr>
+                                    <td>{{ u.username }}</td>
+                                    <td>{{ u.password }}</td>
+                                    <td>{{ u.email }}</td>
+                              </tr>
+                        {%endfor%}
+        	</table>
+          <br/><br/><br/>
+          <form action = "http://127.0.0.1:5000/user" method = "POST">
+        	      <table align="center">
+              	   <tr>
+              	      <th colspan="2">New User</span>
+                    </th>
+              	  <tr>
+                    	   <td>Name: </td>
+                    	   <td><input type="text" id="txtname" name="txtname"></td>
+              	   </tr>
+                     <tr>
+                    	   <td>Password: </td>
+                    	   <td><input type="text" id="txtpass" name="txtpass"></td>
+              	   </tr>
+                     <tr>
+                         <td>Last login: </td>
+                         <td><input type="text" id="txtlogin" name="txtlogin"></td>
+                   </tr>
+                   <tr>
+                         <td>Attempt: </td>
+                         <td><input type="text" id="txtatmp" name="txtatmp"></td>
+                   </tr>
+                   <tr>
+                         <td>Status: </td>
+                         <td><input type="text" id="txtstatus" name="txtstatus"></td>
+                   </tr>
+                    	   <td>Email: </td>
+                    	   <td><input type="text" id="txtemail" name="txtemail"></td>
+              	   </tr>
+  	        </table>
+            <input type="submit" value="submit"></input>
+            </form>
+      </body>
+</html>

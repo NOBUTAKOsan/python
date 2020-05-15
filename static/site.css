@@ -1,0 +1,26 @@
+h2{
+  letter-spacing: 10px;
+  color:#0B132E;
+  font-family: 'Jost', sans-serif;
+}
+
+th{
+  color:black;
+  background-color:#FAC77F;
+  padding:2px 10px;
+  }
+
+td {
+  color:black;
+  background-color:#FFF0DB;
+  padding:3px 10px;
+  }
+
+table{
+  width: 30%;
+}
+
+body {
+  text-align:center;
+  background-color:#F5EDFA;
+}
