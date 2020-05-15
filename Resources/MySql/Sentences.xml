@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sentences>
+  <entry key="selectUsers">SELECT id, username, password, last_login, attempt, status, email FROM user</entry>
+  <entry key="selectUser">SELECT id, username, password, last_login, attempt, status, email FROM user WHERE id = %s</entry>
+  <entry key="insertUser">INSERT user (username, password, last_login, attempt, status, email) VALUES (%s, %s, %s, %s, %s, %s)</entry>
+  <entry key="updateUser">UPDATE user SET username = %s, password = %s, last_login = %s, attempt = %s, status = %s, email = %s WHERE id = %s</entry>
+  <entry key="deleteUser">DELETE from user WHERE id = %s</entry>
+</sentences>
